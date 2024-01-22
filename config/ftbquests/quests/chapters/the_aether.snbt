@@ -1,0 +1,250 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_aether"
+	group: "5BBB507BE497896B"
+	icon: "aether:aether_portal_frame"
+	id: "566DC2763E60ED8A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "32226ED25E813908"
+			rewards: [{
+				id: "4D4DA7A91ACF3F08"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "1A6561D8DE5A63CE"
+				title: "进入&e天境"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32226ED25E813908"]
+			id: "0A99C7852725BFC2"
+			rewards: [{
+				count: 5
+				id: "4A832C71E2196827"
+				item: "deep_aether:chromatic_aercloud"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.3d
+			subtitle: "&e青铜地牢&r的入口位于普通岛屿的侧面。青铜地牢可以包含不同数量的房间。非Boss房间包含&c&l哨石&r&r，它们会攻击玩家，并且有时在4x4的桌子上放有宝箱。但其中一些宝箱是&c拟箱怪&r。这个地牢的&9Boss&r不能用剑攻击。然而，他可以受到任何工具（&a镐&r、&a铲&r 等）的伤害。每个前厅的地板上有&c9个方块&r都无法挖掘。只有在&cBoss&r死亡后，才能挖掘&cBoss房&r的墙壁。"
+			tasks: [{
+				icon: "aether:carved_stone"
+				id: "3865A3E4D4A9A5F3"
+				structure: "aether:bronze_dungeon"
+				title: "造访&e青铜地牢"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"100082345FA03A9B"
+				"3BE6E50AA8E0170D"
+			]
+			id: "0E349CAEF1D249B6"
+			rewards: [{
+				id: "00CF504850C054AD"
+				item: "deep_aether:skyjade"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.2d
+			subtitle: "&b滑动魔石&r是在&e青铜地牢&r中找到的Boss。"
+			tasks: [{
+				entity: "aether:slider"
+				icon: "aether:slider_spawn_egg"
+				id: "69F7F61602435663"
+				title: "击败&b滑动魔石"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32226ED25E813908"]
+			id: "79A852D2B339DF57"
+			rewards: [{
+				id: "194D6096FB82DFBA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "square"
+			size: 1.3d
+			subtitle: "&8白银地牢&r位于类似于天空中的&a帕特农神庙&r结构内。这些地牢通常有多个楼层，多数是三层，每层都有多个房间。大多数房间内都有宝箱，尽管大多数宝箱都是假的（&c拟箱怪&r），但也有一些含有物品。白银地牢中居住着&9女武神&r，只有在玩家攻击它们时才会反击。在和平模式下，女武神仍然会出现，但当玩家试图攻击它们时，它们会传送到其他地方。杀死&9女武神&r将获得一个&a胜利奖牌&r。这个地牢的Boss只能在玩家手持&a10枚胜利勋章&r的情况下被攻击，可以通过手持&a胜利奖牌&r，右键点击它来完成。&a白银地牢Boss&r可以用任何武器攻击。"
+			tasks: [{
+				icon: "aether:locked_angelic_stone"
+				id: "760227D918F26D13"
+				structure: "aether:silver_dungeon"
+				title: "造访&7白银地牢"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32226ED25E813908"]
+			id: "7149B8FB49671630"
+			rewards: [{
+				id: "63860753FE5CA52C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 1.3d
+			subtitle: "&6黄金地牢&r位于球形岛屿上，上面有许多&e金橡木&r树生长。这个地牢通常只有&c&lBoss房&r&r，没有前面的宝藏/怪物房间。&e烈阳巨灵&r不能通过直接攻击来击杀，必须多次击中他扔出的&f白色物体&r 才能杀死他。每次被白色物体击中时，它都会释放出一个较小的版本来攻击玩家。一旦玩家杀死&e烈阳巨灵&r，天空中的太阳将最终落下。在玩家杀死太阳之灵之前，太阳永远不会落下。如果玩家未能杀死&e烈阳巨灵&r，他们的重生点将被重置在&c熔岩&r上，迫使玩家删除地图。"
+			tasks: [{
+				icon: "aether:hellfire_stone"
+				id: "1D066EC48DFC09CD"
+				structure: "aether:gold_dungeon"
+				title: "造访&6黄金地牢"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 4.550000000000001d
+		}
+		{
+			dependencies: ["79A852D2B339DF57"]
+			icon: "aether:valkyrie_spawn_egg"
+			id: "038B71E71E3C8213"
+			rewards: [{
+				count: 3
+				id: "07B08A876561A9BA"
+				item: "deep_aether:purple_squash_slice"
+				type: "item"
+			}]
+			subtitle: "&e女武神&r是通过战斗证明自己的&e中立生物&r。除非受到挑衅，否则她们不会攻击。只在&8白银地牢&r中出现。"
+			tasks: [{
+				entity: "aether:valkyrie"
+				icon: "aether:valkyrie_spawn_egg"
+				id: "121640BF259D479C"
+				title: "击败一位&e女武神"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["038B71E71E3C8213"]
+			id: "68BF5A98532CD5C3"
+			rewards: [{
+				id: "5DE05B3933EAB617"
+				item: {
+					Count: 1b
+					id: "aether:iron_gloves"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.2d
+			subtitle: "&6武神女王&r是在&e白银地牢&r中找到的Boss。"
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				icon: "aether:valkyrie_queen_spawn_egg"
+				id: "0E561AF5890B4422"
+				title: "击败&6武神女王"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A99C7852725BFC2"]
+			id: "100082345FA03A9B"
+			rewards: [{
+				id: "540E0FBBA897B75D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&c哨石&r是&e青铜地牢&r中的&4敌对生物&r。"
+			tasks: [{
+				entity: "aether:sentry"
+				icon: "aether:sentry_spawn_egg"
+				id: "4937B6F09587F4C9"
+				title: "击败&c哨石"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A99C7852725BFC2"]
+			id: "3BE6E50AA8E0170D"
+			rewards: [{
+				id: "53F694B72BCE2324"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&b拟箱怪&r是&e青铜地牢&r中的&4敌对生物&r。"
+			tasks: [{
+				entity: "aether:mimic"
+				icon: "aether:mimic_spawn_egg"
+				id: "71C06FD3B2B127B3"
+				title: "击败&b拟箱怪"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7149B8FB49671630"]
+			id: "221923EEDAEE1BEE"
+			rewards: [{
+				id: "3B81BFF8DC4358B9"
+				item: "aether:golden_ring"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.2d
+			subtitle: "&e烈阳巨灵&r是在&e黄金地牢&r中找到的Boss。"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				icon: "aether:sun_spirit_spawn_egg"
+				id: "49A00D8BAA0923BD"
+				title: "击败&e烈阳巨灵"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 6.6d
+		}
+		{
+			dependencies: ["32226ED25E813908"]
+			id: "702202BCA0E47E11"
+			rewards: [{
+				id: "63778F25C36D5FE9"
+				item: "aether_redux:veridium_ingot"
+				type: "item"
+			}]
+			subtitle: "&6天境传说&r可以通过右键点击手持书本来阅读，然后玩家将看到一本打开的书，上面写着卷数和卷所指的世界。在标题下面，会有一个槽，玩家可以放置该世界的任何物品。一旦放入槽中，书将显示有关该物品的信息。&6天境传说&r只会显示有关其本土物品的信息。"
+			tasks: [{
+				id: "3CE843A4A8A981E7"
+				item: "aether:book_of_lore"
+				type: "item"
+			}]
+			title: "制作一本&3天境传说"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: " &e天境"
+}

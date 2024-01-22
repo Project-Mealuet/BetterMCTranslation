@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "everdawn"
+	group: "5BBB507BE497896B"
+	icon: "blue_skies:lunar_stonebrick"
+	id: "7A7E777C67E216AC"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&8恒晓之地&r的太阳永远在升起。由于这是一个更加湿润和温暖的世界，昆虫和爬行动物繁盛。在进入之前，需要为中毒和着火做好准备，因为这个世界的许多地方可能会使你中毒或着火。"]
+			id: "23B2A759FBB4DBFF"
+			rewards: [{
+				id: "66888954F9EB63AD"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "传送门方块可以在守门人的家里或外面找到。"
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				icon: "blue_skies:lunar_stonebrick"
+				id: "2F88DFAD11A0FFA5"
+				title: "进入恒晓之地"
+				type: "dimension"
+			}]
+			title: "进入&8恒晓之地"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["375FB9826C8942B8"]
+			description: ["幽咽蛛王会向目标扑击，并从上方的天花板喷射毒液。作为这个巢穴的女王，可以预期会有增援从墙壁上爬出来。由于她的攻击方式非常激烈，你可以试着用盾牌挡住她扑击时来使她受到眩晕。"]
+			id: "4F3FD11CA8C37BFA"
+			rewards: [{
+				id: "006A55D1ACC697B7"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "使用钥匙打开前往&6幽咽蛛王地牢&r的门。它位于更深处的&5猛毒地牢&r内。"
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				icon: {
+					Count: 1b
+					id: "blue_skies:arachnarch_trophy"
+					tag: {
+						BlockStateTag: {
+							tier: "bronze"
+						}
+					}
+				}
+				id: "0FA50CFE06683C83"
+				title: "击败幽咽蛛王"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&4幽咽蛛王"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["23B2A759FBB4DBFF"]
+			id: "69871007BC2BB95E"
+			rewards: [{
+				id: "43FB7126F9DBF4C7"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "隐藏在惑乱高塔之中。"
+			tasks: [{
+				count: 4L
+				id: "055CA19EEE17EC85"
+				item: "blue_skies:blinding_key"
+				type: "item"
+			}]
+			title: "获得4把&2地牢钥匙"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["69871007BC2BB95E"]
+			description: ["炼金师使用药剂和物理构造进行战斗。他的许多攻击可以通过观察视觉线索来预测，但如果错过这些线索可能会导致严重伤害。一旦击败，您将获得进入&5猛毒地牢&r的权限。"]
+			id: "433FD23CAA2F4CEA"
+			rewards: [
+				{
+					id: "794BE8A8DF703552"
+					item: {
+						Count: 1b
+						id: "blue_skies:alchemy_scroll"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48CC572D02C958B4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "使用钥匙传送到&e炼金师地牢&r。它位于&e惑乱高塔&r的顶部。"
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				icon: "blue_skies:dawn_blinding_keystone"
+				id: "2AF8CE4F7464FE5C"
+				title: "击杀炼金师"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&5炼金师"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["433FD23CAA2F4CEA"]
+			id: "375FB9826C8942B8"
+			rewards: [{
+				id: "24EA96D3D62BA46B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "隐藏在&2猛毒地牢&r之中。"
+			tasks: [{
+				count: 4L
+				id: "2E53AC6DA2C9B3B0"
+				item: "blue_skies:poison_key"
+				type: "item"
+			}]
+			title: "收集4把&2猛毒地牢&r钥匙"
+			x: 4.0d
+			y: -0.5d
+		}
+	]
+	title: " &8恒晓之地"
+}

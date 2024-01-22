@@ -1,0 +1,284 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_bmc_forge_1192"
+	group: ""
+	icon: "minecraft:book"
+	id: "3E34934F09B08365"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"本教程将指导你了解一些基础功能。别担心，不会花费&o太多&r时间！"
+				""
+				"首先，点击“&9任务&r”字样下方的勾选标记，然后领取&6任务奖励&r。新的任务将开始出现！"
+				""
+				"如果新任务没有开始出现，请尝试重新加入你的世界。在教程结束前，请不要吃面包。"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:book"
+				tag: {
+					Enchantments: [{
+						id: "aqua_affinity"
+						lvl: 1
+					}]
+				}
+			}
+			id: "6A52090D6BC064D7"
+			rewards: [{
+				count: 3
+				id: "26B707F49F695DEA"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "要开始教程，请单击此任务并阅读说明。"
+			tasks: [{
+				id: "1B0800437C68C43A"
+				title: "点我！"
+				type: "checkmark"
+			}]
+			title: "&e欢迎来到更好的MC！"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			dependency_requirement: "one_completed"
+			description: [
+				"屏幕左上角的图标是&aFTB团队&r菜单。这允许你将其他玩家添加到你的团队中。"
+				""
+				"在&aFTB团队&r图标的右侧是&6任务书&r图标，它允许你随时访问&6任务书&r。"
+				""
+				"当你点击玩家显示界面左上角的方块时，你的&8饰品&r槽将会显示出来。某些物品，如鞘翅和图腾，可以在这里装备。"
+				""
+				"尝试在你的项链槽中装备任务奖励中的&c生命符咒&r！"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftbteams:textures/teams.png"
+				}
+			}
+			id: "2958CA7FA6FD3E4F"
+			invisible_until_tasks: 1
+			rewards: [{
+				id: "649C9C6CB3EB241E"
+				item: "twilightforest:charm_of_life_1"
+				type: "item"
+			}]
+			subtitle: "阅读这些描述！"
+			tasks: [
+				{
+					id: "0DD3C1416FC34FA1"
+					title: "点我！"
+					type: "checkmark"
+				}
+				{
+					id: "1D486C4B0E66490C"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			title: "&2物品栏"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			description: [
+				"&9任务（Tasks）&r是完成一项任务（Quest）所需完成的事项。如果一个任务（Task）是一个物品，点击它将显示它的合成配方。"
+				""
+				"&6奖励&r是在完成所有&9任务（Tasks）&r后你将获得的东西。点击以领取。"
+				""
+				"右上角的图钉图标将会把一个任务固定到你的屏幕上。"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftbquests:textures/item/book.png"
+				}
+			}
+			id: "175099CF5696829E"
+			invisible_until_tasks: 1
+			rewards: [{
+				count: 3
+				id: "34B145F40A6C1F3B"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "阅读这些描述"
+			tasks: [
+				{
+					id: "21428FE253D34D4E"
+					title: "任务"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "08EDA62F0B406C49"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			title: "&6任务"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			description: [
+				"将鼠标悬停在一个物品上并按&bR&r键来查看它的制作配方。"
+				""
+				"将鼠标悬停在一个物品上并按&bU&r键来查看它的用途。"
+				""
+				"按&bZ&r键来爬行。"
+				""
+				"蹲下时按&b右键&r来放置一个方块。（对箱子很有用，但并不适用于所有方块）"
+				""
+				"使用带有连锁采集附魔的工具时，按住&b~&r键以激活连锁采集。"
+				""
+				"按&bC&r键来放大视角。"
+				""
+				"按&bM&r键来打开世界地图。"
+				""
+				"按&bU&r键来查看玩家死亡历史记录。"
+				""
+				"按&bO&r键来查看领地界面。"
+				"{@pagebreak}"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:textures/icons/player.png"
+				}
+			}
+			id: "2165E80C52C79992"
+			invisible_until_tasks: 1
+			rewards: [{
+				id: "51B0A356F9FE087C"
+				item: "biomesoplenty:rainbow_birch_sapling"
+				type: "item"
+			}]
+			subtitle: "阅读这些描述，确保你已经用滚轮划到了最底面"
+			tasks: [
+				{
+					id: "6A64112F92690241"
+					title: "点我！"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "2B23CADA52D45FA0"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			title: "&9重要的控制按键"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2958CA7FA6FD3E4F"]
+			description: [
+				"在物品栏的底部，你可能已经注意到了一个搜索栏。"
+				""
+				"这是&dJust Enough Items&r（&dJEI&r）的搜索栏。"
+				""
+				"例如，如果你输入“木头”，屏幕右侧的&dJEI&r物品列表将显示所有名字中包含“木头”的物品。"
+				""
+				"在搜索查询的开头添加一个@符号将显示来自特定模组的物品，例如@Adorn。"
+				""
+				"要将一个物品设为收藏，在&dJEI&r物品列表中将鼠标悬停在该物品上时按&bA&r键。"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/config_button_cheat.png"
+				}
+			}
+			id: "139DAA6E8CF4267A"
+			rewards: [{
+				id: "1AE5746200C26691"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "阅读这些描述！"
+			tasks: [{
+				id: "74C85348A8B837EB"
+				title: "点我！"
+				type: "checkmark"
+			}]
+			title: "&bJEI"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["139DAA6E8CF4267A"]
+			description: [
+				"教程现在&a已经结束&r！"
+				""
+				"要查看其余的任务，请将光标移至屏幕左侧，并展开&6任务组&r。"
+				""
+				"如有其他问题，欢迎加入我们的&bDiscord&r频道：https://lunapixel.studio/discord"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:textures/icons/check.png"
+				}
+			}
+			id: "6A4CB4700F0082C6"
+			rewards: [
+				{
+					id: "53680199E84036F9"
+					item: "alexsmobs:animal_dictionary"
+					type: "item"
+				}
+				{
+					id: "7002DB7B6A466469"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "storagenetwork:network_book"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37F357ABF35CF44C"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "twilightdelight:twilight_guide"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "阅读这些描述"
+			tasks: [{
+				id: "3B2CC7DEE30E3AB8"
+				title: "&a教程完成！"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+	]
+	title: "&d教程"
+}

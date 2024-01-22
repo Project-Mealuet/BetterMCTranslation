@@ -1,0 +1,137 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "everbright"
+	group: "5BBB507BE497896B"
+	icon: "blue_skies:turquoise_stonebrick"
+	id: "548F6C8C65E929D9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["恒晓之地是永恒白昼和严寒之地。这里栖息着巨大的野兽和虚幻的生物，当你穿越这个世界时，务必注意你的背后。要小心雪暴，它会带来浓雾和比平常更多的敌人。"]
+			id: "27CD46C8E6EC2E3B"
+			rewards: [{
+				id: "5FE21EAAD0130B18"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "传送门方块可以在守门人的家里或外面找到。"
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				icon: "blue_skies:turquoise_stonebrick"
+				id: "34BEAE9F7B3C7641"
+				title: "进入永昼之地"
+				type: "dimension"
+			}]
+			title: "进入&9永昼之地"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37B01786D1F519C6"]
+			description: ["召唤师使用闪电、能量攻击和他的魔像卫士进行战斗。务必留意你的背后，因为这些魔像如果不得当地处理会迅速压倒你。击败他将允许你进入自然地牢。"]
+			id: "084BFF7D3DD9BB24"
+			rewards: [
+				{
+					id: "49D4292EB66AD8EE"
+					item: {
+						Count: 1b
+						id: "blue_skies:summoning_tome"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "390C520929991C07"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "使用钥匙传送到&e召唤师地牢&r。它位于&e惑乱高塔&r的顶部。"
+			tasks: [{
+				entity: "blue_skies:summoner"
+				icon: "blue_skies:bright_blinding_keystone"
+				id: "0A272A4C6A0D1869"
+				title: "击杀召唤师"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&5召唤师"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["207769EC3251F70E"]
+			description: ["星荧粉碎者可能不会移动太多，但通过扎根到地面，它能够从下方发动广泛的区域攻击，并具备足够的强大力量，足以使地面本身震动。由于它仍然是一棵树，斧头对它的伤害要大得多，因此需要使用斧头来突破它的防御。请留意寻找用矛来震慑它的机会，以便发动攻击。"]
+			id: "17EE59DC9B0C44B7"
+			rewards: [{
+				id: "65263F95C8C47B56"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "使用钥匙打开前往&c星荧粉碎者&r的门。它位于&a自然地牢&r的顶部。"
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				icon: {
+					Count: 1b
+					id: "blue_skies:starlit_crusher_trophy"
+					tag: {
+						BlockStateTag: {
+							tier: "bronze"
+						}
+					}
+				}
+				id: "78C390F75DC274B9"
+				title: "击杀星荧粉碎者"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&c星荧粉碎者"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["27CD46C8E6EC2E3B"]
+			icon: "blue_skies:blinding_key"
+			id: "37B01786D1F519C6"
+			rewards: [{
+				id: "34A7933B004D13DC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "隐藏在惑乱高塔之中。"
+			tasks: [{
+				count: 4L
+				id: "7A42676AA2769350"
+				item: "blue_skies:blinding_key"
+				type: "item"
+			}]
+			title: "收集4把&2地牢钥匙"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["084BFF7D3DD9BB24"]
+			id: "207769EC3251F70E"
+			rewards: [{
+				id: "489FB4872DF884C0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "隐藏在自然地牢之中。"
+			tasks: [{
+				count: 4L
+				id: "7FB4F19B7B7F9932"
+				item: "blue_skies:nature_key"
+				type: "item"
+			}]
+			title: "收集4把&a地牢钥匙"
+			x: 4.0d
+			y: -0.5d
+		}
+	]
+	title: " &9永昼之地"
+}

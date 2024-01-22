@@ -1,0 +1,283 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_twilight_forest"
+	group: "5BBB507BE497896B"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "3DAC62F9CB57DD77"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2BC7B74C1D405B3B"
+			rewards: [{
+				id: "60AC17EED0812047"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			subtitle: "要创建暮色森林传送门，首先制作一个2x2的无限水源。然后，在周围的草块上放置花朵，并将一颗钻石扔进水中。"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "43B4B4196E278A86"
+				title: "进入暮色森林"
+				type: "dimension"
+			}]
+			title: "进入&2暮色森林"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2BC7B74C1D405B3B"]
+			id: "7630C21661FED121"
+			rewards: [{
+				id: "165BE5F21305C953"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			subtitle: "在森林中找到。解锁&e巫妖塔&r。"
+			tasks: [{
+				entity: "twilightforest:naga"
+				icon: "twilightforest:naga_trophy"
+				id: "3E3AAB64DD29EF24"
+				title: "击败娜迦"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&a娜迦"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7630C21661FED121"]
+			id: "7149FE98D0E105CE"
+			rewards: [{
+				id: "3A2EB8FD6C05F748"
+				item: {
+					Count: 1b
+					id: "twilightforest:fortification_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "在森林中找到。解锁迷宫和雪人巢穴。"
+			tasks: [{
+				entity: "twilightforest:lich"
+				icon: "twilightforest:lich_trophy"
+				id: "5794A56FA9705232"
+				title: "击败暮色巫妖"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&e暮色巫妖&r"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["264FA27F45BDDCFF"]
+			id: "37E4C4EFA9E20B79"
+			rewards: [
+				{
+					count: 8
+					id: "4411FF8D2D7D3530"
+					item: "twilightforest:cooked_venison"
+					type: "item"
+				}
+				{
+					id: "7737DE55400CB2D3"
+					item: "twilightforest:charm_of_keeping_1"
+					type: "item"
+				}
+			]
+			subtitle: "在沼泽中的亡灵矿山中找到。解锁黑暗森林。"
+			tasks: [{
+				entity: "twilightforest:hydra"
+				icon: "twilightforest:hydra_trophy"
+				id: "0C2016FE44EF5A17"
+				title: "击败九头蛇"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&2九头蛇&r"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["601FE17AA8C90316"]
+			id: "57FD6DFF7B7647D0"
+			rewards: [{
+				id: "3DCE5F493B46E441"
+				item: "twilightforest:charm_of_keeping_2"
+				type: "item"
+			}]
+			subtitle: "在黑暗森林中的黑暗高塔中找到。"
+			tasks: [{
+				advancement: "twilightforest:progress_ur_ghast"
+				criterion: ""
+				id: "45767EA415670C8F"
+				type: "advancement"
+			}]
+			title: "击败&f暮初恶魂&r"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7149FE98D0E105CE"]
+			id: "3D1F53C06B660F96"
+			rewards: [{
+				id: "65ED4735EF4E9AB5"
+				item: "twilightforest:charm_of_keeping_3"
+				type: "item"
+			}]
+			subtitle: "在&f雪地森林&r中的&f雪怪巢穴&r找到。解锁&f&l冰雪女王&r。"
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				icon: "twilightforest:alpha_yeti_trophy"
+				id: "12C1C8D16C9D9FD1"
+				title: "击败雪怪首领"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&f&l雪怪首领&r"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3D1F53C06B660F96"]
+			id: "7B6005A9F6F5C7FE"
+			rewards: [{
+				id: "32DA7FB74907E8F2"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			subtitle: "在冰川中找到。"
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				icon: "twilightforest:snow_queen_trophy"
+				id: "191F4CCB0B22AB0A"
+				title: "击败冰雪女王"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败&f&l冰雪女王"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7149FE98D0E105CE"]
+			id: "601FE17AA8C90316"
+			rewards: [{
+				id: "46F2AF98CE5DC419"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			subtitle: "通过使用战利品打开位于黑暗森林中的地下要塞而找到。解锁暮初恶魂之塔。"
+			tasks: [{
+				advancement: "twilightforest:progress_knights"
+				criterion: ""
+				id: "40801B47C78FF0BB"
+				type: "advancement"
+			}]
+			title: "击败&8幻影骑士&r"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4E9415FC5D3711EB"]
+			id: "0EDB1E145CB2D26F"
+			rewards: [
+				{
+					id: "5AB6929366335D0C"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 32
+					id: "656BBFA5B485DA6F"
+					item: "twilightforest:blue_castle_door"
+					type: "item"
+				}
+			]
+			subtitle: "似乎还没有人在这里。至少你可以使用这些炫酷的门。"
+			tasks: [{
+				advancement: "twilightforest:progression_end"
+				criterion: ""
+				id: "3FB649297849E864"
+				type: "advancement"
+			}]
+			title: "前往&f&l最终城堡&r"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7B6005A9F6F5C7FE"
+				"37E4C4EFA9E20B79"
+				"57FD6DFF7B7647D0"
+			]
+			id: "4E9415FC5D3711EB"
+			rewards: [
+				{
+					id: "19C8C6D2C0117B6A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "3AF46D22ED48CF68"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "使用天空中发现的东西来破开地下深处的宝库。可以烧穿荆棘地区的多刺植被。"
+			tasks: [{
+				advancement: "twilightforest:progress_troll"
+				criterion: ""
+				id: "69F7F01A2320CCFF"
+				type: "advancement"
+			}]
+			title: "找到并使用&6余烬之灯"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7149FE98D0E105CE"]
+			id: "264FA27F45BDDCFF"
+			rewards: [
+				{
+					id: "0FB5C5C3A7CCD6B7"
+					item: {
+						Count: 1b
+						id: "twilightforest:zombie_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "085E0FEEF75E573F"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "通过击败沼泽迷宫中的米诺陶获得，解锁亡灵矿山。"
+			tasks: [{
+				id: "1837A3A7F85C4E8E"
+				item: "twilightforest:meef_stroganoff"
+				type: "item"
+			}]
+			title: "食用牛头人沙拉酱肉"
+			x: 3.5d
+			y: 0.5d
+		}
+	]
+	title: " &2暮色森林"
+}
