@@ -1,0 +1,28 @@
+name: Sync to Codeup
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checking out GitHub repository
+      uses: actions/checkout@v4.1.1
+      with:
+        fetch-depth: 0
+
+    - name: Pushing to another repository
+      env:
+        TARGET_REPO: ${{ secrets.TARGET_REPO }}
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      if: env.TARGET_REPO
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa codeup.aliyun.com >> ~/.ssh/known_hosts
+        git remote add target "$TARGET_REPO"
+        git push target HEAD:main --force
